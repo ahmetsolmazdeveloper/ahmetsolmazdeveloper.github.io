@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070e1e">
+  <title>Galaxy Runner — Oyna | Ahmet Solmaz</title>
+  <meta name="description" content="Galaxy Runner'ı tarayıcında ücretsiz oyna. Ahmet Solmaz'ın Android için geliştirdiği uzay oyununun web sürümü.">
+  <link rel="canonical" href="https://ahmetsolmazdeveloper.github.io/games/galaxy-runner/">
+  <meta property="og:title" content="Galaxy Runner — Tarayıcıda oyna">
+  <meta property="og:description" content="Bir uzay gemisiyle yıldızların arasında. Ahmet Solmaz'ın web oyununu tarayıcında dene.">
+  <meta property="og:image" content="https://ahmetsolmazdeveloper.github.io/assets/image11.png">
+  <meta property="og:url" content="https://ahmetsolmazdeveloper.github.io/games/galaxy-runner/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="player.css">
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <header class="player-header">
+    <a class="back-link" href="../../index.html#galaxy-runner">← Portföye dön</a>
+    <span>AHMET SOLMAZ / OYUNLAR</span>
+  </header>
+  <main>
+    <div class="game-heading"><div><p class="eyebrow">YILDIZLARIN ARASINDA</p><h1>Galaxy <em>Runner</em></h1></div><span class="game-tag">ANDROID / WEB DEMO</span></div>
+    <section class="game-stage" id="game-stage" aria-label="Galaxy Runner oyun alanı">
+      <canvas id="unity-canvas" width="540" height="960" tabindex="0" aria-label="Galaxy Runner. Fareyi basılı tutup sağa sola sürükleyerek yönlen; çift tıklayarak ateş et." hidden></canvas>
+      <div class="start-screen" id="start-screen">
+        <img src="../../assets/image11.png" alt="Galaxy Runner'da yıldızların arasında ilerleyen uzay gemisi" width="757" height="1639">
+        <div class="start-content"><p>Rotanı çiz.<br><strong>Galaksiye katıl.</strong></p><button id="start-button" type="button">▶ Oyunu başlat</button><span>İlk açılışta yaklaşık 71 MB yüklenir.</span></div>
+      </div>
+      <div class="loading-screen" id="loading-screen" hidden>
+        <p id="loading-label" role="status">Galaksi hazırlanıyor…</p>
+        <progress id="loading-progress" max="1" value="0" aria-label="Oyun yükleniyor"></progress>
+        <div id="load-error" role="alert" hidden><p>Oyun yüklenemedi. İnternet bağlantını kontrol edip yeniden deneyebilirsin.</p><button id="retry-button" type="button">Yeniden dene</button></div>
+      </div>
+      <noscript>Oyunu oynamak için tarayıcında JavaScript'i etkinleştirmen gerekiyor.</noscript>
+    </section>
+    <div class="game-toolbar"><p id="game-status" role="status">Oynamaya hazır olduğunda başlat.</p><button id="fullscreen-button" type="button" disabled>Tam ekran ↗</button></div>
+    <div class="game-details">
+      <section><h2>Oyun hakkında</h2><p>Galaxy Runner oyununu ilk olarak Android için tek başıma geliştirdim. Bir uzay gemisinin yolculuğunu konu alan oyunun bu web sürümünü doğrudan tarayıcında deneyebilirsin.</p></section>
+      <section><h2>Kontroller</h2><p><strong>Yönlenme:</strong> Farenin sol tuşunu basılı tutup sağa veya sola sürükle.<br><strong>Ateş:</strong> Çift tıkla.</p><p class="muted">Oyunu başlatıp yüklemenin tamamlanmasını bekle. Daha geniş görünüm için tam ekran düğmesini kullanabilirsin.</p><p><a href="../tatli-coffee-merge/">Diğer oyunum: Tatlı Coffee Merge →</a></p></section>
+    </div>
+  </main>
+</body>
+</html>
