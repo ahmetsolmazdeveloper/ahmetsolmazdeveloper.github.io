@@ -139,7 +139,6 @@ const images = [
   { src: 'assets/maze-steam-3.jpg', title: 'Maze of Mask / Maske', alt: 'Mağarada maske takan oyun karakteri' },
   { src: 'assets/maze-steam-0.jpg', title: 'Maze of Mask / Derinlikler', alt: 'Altın renkli ışıklarla aydınlanan su altı labirenti' },
   { src: 'assets/maze-steam-4.jpg', title: 'Maze of Mask / Ada', alt: 'Gün batımında palmiyelerle çevrili ada' },
-  { src: 'assets/image10.png', title: 'Goblin Hunter', alt: 'Goblin Hunter oyunundan tam ekran görüntüsü' },
   { src: 'assets/image11.png', title: 'Galaxy Runner', alt: 'Galaxy Runner oyunundan tam ekran görüntüsü' },
   { src: 'assets/image12.png', title: 'Speed Miner', alt: 'Speed Miner oyunundan tam ekran görüntüsü' },
 ];
