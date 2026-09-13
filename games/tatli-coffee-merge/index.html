@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1b1410">
+  <title>Tatlı Coffee Merge — Oyna | Ahmet Solmaz</title>
+  <meta name="description" content="Tatlıları birleştir, sevimli hayvan müşterilerin siparişlerini yetiştir. Tatlı Coffee Merge'i tarayıcında ücretsiz oyna.">
+  <link rel="canonical" href="https://ahmetsolmazdeveloper.github.io/games/tatli-coffee-merge/">
+  <meta property="og:title" content="Tatlı Coffee Merge — Tarayıcıda oyna">
+  <meta property="og:description" content="Sıcak bir pastanede birleştirme bulmacası. Aynı tatlıları buluştur, siparişleri tamamla.">
+  <meta property="og:image" content="https://ahmetsolmazdeveloper.github.io/assets/tatli-coffee-merge.png">
+  <meta property="og:url" content="https://ahmetsolmazdeveloper.github.io/games/tatli-coffee-merge/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="player.css">
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <header class="player-header">
+    <a class="back-link" href="../../index.html#tatli-coffee-merge">← Portföye dön</a>
+    <span>AHMET SOLMAZ / OYUNLAR</span>
+  </header>
+  <main>
+    <div class="game-heading"><div><p class="eyebrow">BİRLEŞTİR · SİPARİŞİ YETİŞTİR</p><h1>Tatlı Coffee <em>Merge</em></h1></div><span class="game-tag">UNITY / WEB</span></div>
+    <section class="game-stage" id="game-stage" aria-label="Tatlı Coffee Merge oyun alanı">
+      <canvas id="unity-canvas" tabindex="0" aria-label="Tatlı Coffee Merge. Fare veya dokunmatik ile hedefle ve bırak." hidden></canvas>
+      <div class="start-screen" id="start-screen">
+        <img src="../../assets/tatli-coffee-merge.png" alt="Pastane tezgâhında birleştirme kavanozu, tatlılar ve sipariş bekleyen hayvan müşteri" width="1053" height="539">
+        <div class="start-content"><p>Küçük bir mola.<br><strong>Tatlı bir bulmaca.</strong></p><button id="start-button" type="button">▶ Oyunu başlat</button><span>İlk açılışta yaklaşık 12 MB yüklenir.</span></div>
+      </div>
+      <div class="loading-screen" id="loading-screen" hidden>
+        <p id="loading-label" role="status">Kafe hazırlanıyor…</p>
+        <progress id="loading-progress" max="1" value="0" aria-label="Oyun yükleniyor"></progress>
+        <div id="load-error" role="alert" hidden><p>Oyun yüklenemedi. İnternet bağlantını kontrol edip yeniden deneyebilirsin.</p><button id="retry-button" type="button">Yeniden dene</button></div>
+      </div>
+      <noscript>Oyunu oynamak için tarayıcında JavaScript'i etkinleştirmen gerekiyor.</noscript>
+    </section>
+    <div class="game-toolbar"><p id="game-status" role="status">Oynamaya hazır olduğunda başlat.</p><button id="fullscreen-button" type="button" disabled>Tam ekran ↗</button></div>
+    <div class="game-details">
+      <section><h2>Nasıl oynanır?</h2><p>Ürünleri kavanoza bırak. Aynı ürünler birbirine değdiğinde daha büyük bir tatlıya dönüşür. Müşterinin sabrı tükenmeden siparişlerini tamamla; kavanozu taşırmamaya dikkat et.</p></section>
+      <section><h2>Kontroller</h2><p><strong>Fare:</strong> Hedefle, tıkla ve bırak.<br><strong>Dokunmatik:</strong> Parmağınla hedefle ve bırak.<br><strong>Duraklat:</strong> Oyun içindeki Ⅱ düğmesi.</p><p class="muted">Telefonda daha geniş bir oyun alanı için yatay kullanabilirsin.</p></section>
+    </div>
+  </main>
+</body>
+</html>
