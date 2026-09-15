@@ -140,7 +140,6 @@ const images = [
   { src: 'assets/maze-steam-0.jpg', title: 'Maze of Mask / Derinlikler', alt: 'Altın renkli ışıklarla aydınlanan su altı labirenti' },
   { src: 'assets/maze-steam-4.jpg', title: 'Maze of Mask / Ada', alt: 'Gün batımında palmiyelerle çevrili ada' },
   { src: 'assets/image11.png', title: 'Galaxy Runner', alt: 'Galaxy Runner oyunundan tam ekran görüntüsü' },
-  { src: 'assets/image12.png', title: 'Speed Miner', alt: 'Speed Miner oyunundan tam ekran görüntüsü' },
   { src: 'assets/tatli-coffee-merge.png', title: 'Tatlı Coffee Merge', alt: 'Pastanede birleştirme kavanozu ve hayvan müşterinin siparişi' },
 ];
 let activeImage = 0;
