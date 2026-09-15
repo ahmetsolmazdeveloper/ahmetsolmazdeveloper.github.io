@@ -2,31 +2,8 @@
 
 const root = document.documentElement;
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const motionToggle = document.querySelector('.motion-toggle');
-let storedMotion = false;
-try { storedMotion = localStorage.getItem('barlas-motion-off') === 'true'; } catch {}
-let motionOff = storedMotion || reduceMotion.matches;
-
-function setMotion() {
-  root.classList.toggle('motion-off', motionOff);
-  motionToggle.setAttribute('aria-pressed', String(motionOff));
-  motionToggle.setAttribute('aria-label', motionOff ? 'Animasyonları aç' : 'Animasyonları durdur');
-  motionToggle.querySelector('.motion-label').textContent = motionOff ? 'Hareket kapalı' : 'Hareket açık';
-  motionToggle.querySelector('.motion-icon').textContent = motionOff ? '▶' : 'Ⅱ';
-}
-setMotion();
-motionToggle.addEventListener('click', () => {
-  // The operating system's accessibility preference always takes precedence.
-  if (reduceMotion.matches) return;
-  motionOff = !motionOff;
-  try { localStorage.setItem('barlas-motion-off', String(motionOff)); } catch {}
-  setMotion();
-});
 function syncSystemMotion() {
-  if (reduceMotion.matches) motionOff = true;
-  motionToggle.disabled = reduceMotion.matches;
-  motionToggle.title = reduceMotion.matches ? 'Cihazınızın azaltılmış hareket tercihi etkin.' : '';
-  setMotion();
+  root.classList.toggle('motion-off', reduceMotion.matches);
 }
 reduceMotion.addEventListener('change', syncSystemMotion);
 syncSystemMotion();
